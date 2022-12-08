@@ -7,7 +7,6 @@ function RecipeCreate({ addRecipe }) {
     name: "",
     cuisine: "",
     photo: "",
-    comment: "",
     ingredients: "",
     preparation: "",
   };
