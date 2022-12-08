@@ -26,11 +26,10 @@ function RecipeCreate({ addRecipe }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (
-      formData.name == "" &&
-      formData.cuisine == "" &&
-      formData.photo == "" &&
-      formData.comment == "" &&
-      formData.ingredients == "" &&
+      formData.name == "" ||
+      formData.cuisine == "" ||
+      formData.photo == "" ||
+      formData.ingredients == "" ||
       formData.preparation == ""
     ) {
       alert("All fields are mandatory");
