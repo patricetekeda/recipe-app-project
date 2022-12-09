@@ -24,17 +24,9 @@ function RecipeCreate({ addRecipe }) {
   //this moves the conent  of formData to our recipe array and then resets our form to ensure it is blank and ready for the next recipe
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (
-      formData.name == "" ||
-      formData.cuisine == "" ||
-      formData.photo == "" ||
-      formData.ingredients == "" ||
-      formData.preparation == ""
-    ) {
-      alert("All fields are mandatory");
-    } else {
-      addRecipe(formData);
-    }
+
+    addRecipe(formData);
+
     setFormData({ ...initialFormState });
   };
 
@@ -56,6 +48,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="Name"
                 onChange={handleChange}
                 value={formData.name}
+                required
               />
             </td>
             <td>
@@ -66,6 +59,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="Cuisine"
                 onChange={handleChange}
                 value={formData.cuisine}
+                required
               />
             </td>
             <td>
@@ -76,6 +70,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="URL"
                 onChange={handleChange}
                 value={formData.photo}
+                required
               />
             </td>
             <td>
@@ -85,6 +80,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="Ingredients"
                 onChange={handleChange}
                 value={formData.ingredients}
+                required
               />
             </td>
             <td>
@@ -94,6 +90,7 @@ function RecipeCreate({ addRecipe }) {
                 placeholder="preparation"
                 onChange={handleChange}
                 value={formData.preparation}
+                required
               />
             </td>
             <td>
