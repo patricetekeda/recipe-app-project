@@ -5,7 +5,7 @@ import RecipeList from "./RecipeList";
 import RecipeData from "./RecipeData";
 
 function App() {
-  //create a use tate for new and preexisting recipe data
+  //create a use state for new and pre-existing recipe data
   const [recipes, setRecipes] = useState(RecipeData);
 
   //uses the form data and spreads it to the recipe array

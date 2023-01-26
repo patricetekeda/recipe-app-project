@@ -21,7 +21,7 @@ function RecipeCreate({ addRecipe }) {
     });
   };
 
-  //this moves the conent  of formData to our recipe array and then resets our form to ensure it is blank and ready for the next recipe
+  //this moves the content  of formData to our recipe array and then resets our form to ensure it is blank and ready for the next recipe
   const handleSubmit = (event) => {
     event.preventDefault();
 
