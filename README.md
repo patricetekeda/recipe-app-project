@@ -1,5 +1,7 @@
 # Project description: Recipe CRUD
 
+## Fork and Clone this Project
+
 ## Run: npm install
 
 ## Run: npm start
